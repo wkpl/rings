@@ -1,0 +1,6 @@
+git repository https://github.com/wkpl/rings
+git add *
+git commit -m "poly-rings and totoro"
+git push origin master
+
+
