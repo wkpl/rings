@@ -19,13 +19,19 @@ cylinder(r=31,h=9, center=true);
 
 }
 
-rotate([0,0,7])
-translate([0,10.9,.5])
-rotate([90,0,0])
-import("mathbb_C.stl", convexity = 5);
 
-rotate([0,0,-7])
-translate([0,10.9,.5])
-rotate([90,0,0])
-import("mathbb_R.stl", convexity = 5);
+rotate([0,0,-9])
+translate([0,10,2.2])
+rotate([-90,0,0])
+linear_extrude(height = 1, convexity = 3)
+scale(.8)
+import(file = "mathbb_C.dxf");
+
+rotate([0,0,9])
+translate([0,10,2.2])
+rotate([-90,0,0])
+linear_extrude(height = 1, convexity = 3)
+scale(.8)
+import(file = "mathbb_R.dxf");
+
 
